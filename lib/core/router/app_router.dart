@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:laundry_app/core/constants/router_constants.dart';
+import 'package:laundry_app/features/driver/auth/presentation/screens/Home_driver_screen.dart';
 import 'package:laundry_app/features/driver/auth/presentation/screens/apply_becoming_driver_screen.dart';
 import 'package:laundry_app/features/driver/auth/presentation/screens/forget_password_screen.dart';
 import 'package:laundry_app/features/driver/auth/presentation/screens/log_in_driver_screen.dart';
@@ -34,6 +35,10 @@ class AppRouter {
       GoRoute(
         path: RouterConstants.applyBecomingDriverScreen,
         builder: (context, state) => const ApplyBecomingDriverScreen(),
+      ),
+      GoRoute(
+        path: RouterConstants.driverHome,
+        builder: (context, state) => const HomeDriverScreen(),
       ),
     ],
   );

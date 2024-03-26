@@ -84,6 +84,28 @@ class LogInScreen extends StatelessWidget {
             Positioned(
               left: 0,
               right: 0,
+              bottom: 100,
+              child: Center(
+                child: SizedBox(
+                  width: context.screenWidth > 600 ? 350 : 300,
+                  child: CupertinoButton(
+                    color: ColorConstants.purpleAppColor, // Background color
+                    borderRadius: BorderRadius.circular(25.0), // Border radius
+
+                    onPressed: () {
+                      context.push(RouterConstants.driverHome);
+                    },
+                    child: Text(
+                      'Driver Home',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              left: 0,
+              right: 0,
               bottom: 20,
               child: Center(
                 child: SizedBox(
