@@ -50,6 +50,7 @@ dependencies:
   shimmer: ^3.0.0
   device_preview: ^1.1.0
   flutter_svg: ^2.0.9
+  cached_network_image: any
 
 dev_dependencies:
   flutter_test:
